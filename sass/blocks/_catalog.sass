@@ -1,0 +1,97 @@
+.catalog
+    position: relative
+    min-height: 950px
+    &_subtitle
+        display: block
+        margin: 0 auto
+        text-align: center
+        font-size: 21px
+        line-height: 24px
+        font-weight: 300
+        color: #2e2e2e
+    &_content
+        display: none
+        margin-top: 60px
+        justify-content: space-between
+        flex-wrap: wrap
+        &_active 
+            display: flex
+    
+        
+.catalog-item
+    width: 267px
+    min-height: 357px
+    border: 2px solid #e8e8e8
+    overflow: hidden
+    &_title
+        display: flex
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        color: #ffffff
+        width: 267px
+        height: 61px
+        background-color: #25333c
+        justify-content: center
+        align-items: center
+    &_subtitle
+        display: block
+        margin: 0 auto
+        text-align: center
+        font-size: 21px
+        line-height: 24px
+        font-weight: 300
+        color: #2e2e2e        
+    &_img
+        display: block
+        margin: 0 auto  
+        margin-top: 10px
+    &_content 
+        width: 50%
+        margin-right: 0px
+        transform: translateX(-100%)
+        transition: 0.5s all
+        &_active 
+            transform: translateX(0%)
+            margin-right: 20px
+    &_list 
+        position: relative
+        width: 50%
+        margin-left: 20px
+        transform: translateX(0%)
+        padding-right: 20px
+        transition: 0.5s all
+        padding-left: 19px
+        margin-bottom: 0
+        list-style-type: none
+        &_active 
+            transform: translateX(-100%)
+            margin-left: 0px
+            &:before 
+                content: ''
+                position: absolute
+                width: 5px
+                height: 5px
+                background-color: $main-color
+                left: -14px
+                top: 7px
+    
+    &_price
+        display: block
+        text-align: center
+        font-size: 28px
+        font-weight: 400
+        text-transform: none
+        color: #ec644b
+    &_wrapper
+        display: flex
+        /** width: calc(200% + 40px) **/
+        width: 200%
+    &_descr
+        font-size: 14px
+        line-height: 20px
+        font-weight: 300
+        color: #2e2e2e
+        text-align: center
+        margin-top: 19px
+    
